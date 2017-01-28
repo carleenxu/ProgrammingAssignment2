@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This script used to minimise the costly matrix inversion
 
-## Write a short comment describing this function
+## makeCacheMatrix create a special "matrix" object and cache it inverse
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -18,7 +17,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve function checks if the inverse has already been computed 
+## If yes it get the answer from the cache instead of repeating the computation 
+## If no it compute the inverse of the matrix
+## the function return the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
